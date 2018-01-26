@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3040 4372 61.72 61.721">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e5c045;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_34" data-name="Group 34" transform="translate(-3040 4372)">
+    <circle id="Ellipse_3" data-name="Ellipse 3" class="cls-1" cx="30.86" cy="30.86" r="30.86" transform="translate(0 0)"/>
+    <g id="_001-mail-black-envelope-symbol" data-name="001-mail-black-envelope-symbol" transform="translate(13.271 18.074)">
+      <path id="Path_1" data-name="Path 1" class="cls-2" d="M33.9,81.836a4.2,4.2,0,0,1-.544,2.038L22.65,71.9l10.586-9.262a4.206,4.206,0,0,1,.66,2.251V81.836ZM16.948,74.074,31.679,61.185a4.184,4.184,0,0,0-2.019-.534H4.237a4.169,4.169,0,0,0-2.018.534Zm4.107-.78-3.41,2.985a1.063,1.063,0,0,1-1.394,0L12.84,73.294,2,85.421a4.186,4.186,0,0,0,2.234.652H29.659a4.186,4.186,0,0,0,2.234-.652ZM.66,62.637A4.207,4.207,0,0,0,0,64.888V81.836a4.186,4.186,0,0,0,.544,2.038L11.245,71.9Z" transform="translate(0 -60.651)"/>
+    </g>
+  </g>
+</svg>

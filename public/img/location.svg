@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3041 4001 61.72 61.72">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e5c045;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Group_32" data-name="Group 32" transform="translate(-3041 4001)">
+    <circle id="Ellipse_1" data-name="Ellipse 1" class="cls-1" cx="30.86" cy="30.86" r="30.86" transform="translate(0 0)"/>
+    <g id="_003-pin" data-name="003-pin" transform="translate(19.491 13.953)">
+      <g id="Group_16" data-name="Group 16" transform="translate(0)">
+        <path id="Path_3" data-name="Path 3" class="cls-2" d="M96.924,0a11.592,11.592,0,0,0-10.2,17.1L96.29,34.4a.725.725,0,0,0,1.268,0l9.569-17.306A11.593,11.593,0,0,0,96.924,0Zm0,17.387a5.8,5.8,0,1,1,5.8-5.8A5.8,5.8,0,0,1,96.924,17.387Z" transform="translate(-85.333)"/>
+      </g>
+    </g>
+  </g>
+</svg>

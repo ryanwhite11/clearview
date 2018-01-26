@@ -1,0 +1,945 @@
+@import "reset";
+// FONTS
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+
+// BOOTSTRAP
+@import "node_modules/bootstrap/scss/bootstrap.scss"; 
+
+@import "variables";
+@import "mixins";
+
+//FEATURES
+@import "hamburger";
+
+// DEFAULTS
+
+.hide{
+	display: none;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+// TYPOGRAPHY
+h1,h2,h3,h4,h5,h6,p,a,li,input,label{
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+h1{
+	font-weight: $bold;
+}
+
+h2{
+	font-weight: $bold;
+	font-size: em(20px);
+	text-transform: uppercase;
+	line-height: em(24px);
+
+	@include medium-up{
+		font-size: em(30px);
+	}
+}
+h3{
+	font-weight: $bold;
+	font-size: em(20px);
+	line-height: em(24px);
+}
+h4{
+	font-weight: $semiBold;
+	font-size: em(16px);
+	line-height: em(24px);
+
+	@include medium-up{
+		font-size: em(20px);
+		line-height: em(26px);
+	}
+}
+
+p{
+	font-weight: $regular;
+	font-size: em(16px);
+	line-height: em(30px);
+}
+
+a{
+	&:hover,&:focus,&:active{
+		text-decoration: none;
+	}
+}
+
+a.yellow{
+	transition: 0.3s;
+	&:hover,&:focus,&:active{
+		opacity: 0.7;
+		color: $yellow;
+	}
+}
+
+//COLOURS 
+.yellow{
+	color: $yellow;
+}
+.white{
+	color: $white;
+}
+.lightGrey{
+	color: $lightGrey;
+}
+.darkGrey{
+	color: $darkGrey;
+}
+.grey{
+	color: $grey;
+}
+.black{
+	color: $black;
+}
+
+.uppercase{
+	text-transform: uppercase;
+}
+
+// ADJUST
+.fullHeight{
+	height: 100%;
+}
+
+
+//BUTTONS
+.button{
+	padding: 15px 50px;
+	font-weight: $bold;
+	font-size: em(16px);
+}
+
+.landingButton{
+	width: 220px;
+	padding: 15px 0px;
+	font-weight: $bold;
+	font-size: em(16px);
+	text-align: center;
+	// margin: 0 auto;
+	// display: block;
+
+}
+
+.buttonYellow{
+	background: $yellow;
+	color: $white;
+	transition: 0.3s;
+	border: 3px solid $yellow;
+
+	&:active,&:focus,&:hover{
+		color: $white;
+		text-decoration: none;
+	}
+	@include medium-up{
+		&:active,&:focus,&:hover{
+			background: none;
+			border-color: $yellow;
+		}
+	}
+}
+
+.buttonClear{
+	background: none;
+	color: $white;
+	border: 3px solid $yellow;
+	transition: 0.3s;
+	&:active,&:focus,&:hover{
+		color: $white;
+		text-decoration: none;
+	}
+	@include medium-up{
+		&:active,&:focus,&:hover{
+			background: $yellow;
+			border-color: $yellow;
+			// color: $yellow;
+		}
+	}
+}
+
+.buttonGrey{
+	background: $darkGrey;
+	color: $white;
+	border: 3px solid $darkGrey;
+	transition: 0.3s;
+
+	&:active,&:focus,&:hover{
+		color: $white;
+		text-decoration: none;
+	}
+	@include medium-up{
+		&:active,&:focus,&:hover{
+			background: $yellow;
+			border-color: $yellow;
+			// color: $yellow;
+		}
+	}
+}
+
+.headerButton{
+	padding: 10px 40px;
+	font-weight: $bold;
+	font-size: rem(16px);
+	background: $white;
+	color: $yellow;
+	border: 3px solid $white;
+	&:active,&:focus,&:hover{
+		color: $yellow;
+		text-decoration: none;
+	}
+}
+
+//HEADER 
+#mainHeader{
+	position: fixed;
+	top: 0;
+	background: rgba(0,0,0,0.65);
+	width: 100%;
+	left: 0;
+	right: 0;
+	padding: 15px 10px;
+	z-index: 99;
+}
+
+#mainLogo{
+	width: 150px;	
+}
+
+//FOOTER
+#mainFooter{
+	background: $darkGrey;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+	
+	#footerLogo{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		max-width: 210px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	li{
+		color: $white;
+		font-size: em(16px) ;
+		font-weight: $regular ;
+		
+		.yellow{
+			color: $yellow;
+		}
+		a{
+			color: $white;
+		}
+	}
+
+	.footerInfoCon{
+		margin-top: 30px;
+	}
+
+	.footerSmContainer{
+		text-align: center;
+	}
+
+	.footerSmIcon{
+		width: 35px;
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+}
+
+#footerCopyright{
+	margin-top: 60px;
+	margin-bottom: 10px;
+	width: 100%;
+	text-align: center;
+	color: $grey;
+	p{
+		font-size: 14px;
+		margin: 5px;
+		@include medium-up{
+			display: inline-block;
+
+			&:nth-child(2){
+				border-right: 1px solid $grey;
+				border-left: 1px solid $grey;
+				padding: 0 10px;
+			}
+		}
+	}
+	a{
+		color: $white;
+	}
+
+}
+
+
+
+//LANDINGS
+#homeLanding{
+	height: 100vh;
+	padding-top: 60px;
+	color: $white;
+	text-align: center;
+	background: url("/img/home-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+
+	h4{
+		margin: 30px 0;
+	}
+
+	.landingButton{
+		margin: 20px auto;
+	}
+	
+}
+
+#aboutLanding{
+	height: 100vh;
+	padding-top: 30px;
+	color: $white;
+	text-align: center;
+	background: url("/img/about-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+
+	h4{
+		margin: 30px 0;
+	}
+
+	.landingButton{
+		margin: 20px auto;
+	}
+	
+}
+
+#equipmentLanding{
+	height: 100vh;
+	padding-top: 60px;
+	color: $white;
+	text-align: center;
+	background: url("/img/equipment-bg.jpg");
+	background-position: center center;
+	background-size: cover;
+
+	h4{
+		margin: 30px 0;
+	}
+
+	.landingButton{
+		margin: 20px auto;
+	}
+	
+}
+
+.landingTitle{
+	font-size: em(35px);
+	line-height: 40px;
+	span{
+		font-size: rem(16px) !important;
+		font-weight: $medium;
+		line-height: 20px;
+	}
+	@include medium-up{
+		font-size: em(70px);
+		margin-bottom: 40px;
+		span{
+			font-size: rem(25px) !important;
+			line-height: 80px;
+		}
+	}
+
+	@include large-up{
+		font-size: em(80px);
+		margin-bottom: 60px;
+
+		span{
+			font-size: rem(30px) !important;
+			line-height: 100px;
+		}
+	}
+}
+
+//HOME PAGE
+
+//ABOUT
+#homeAbout{
+	@include medium-up{
+		background: url("/img/pattern.png");
+		background-position: center center;
+		background-size: cover;
+		margin-bottom: 100px;
+	}
+	@include large-up{
+		margin: 100px 0;
+	}
+}
+
+#aboutValue{
+	@include medium-up{
+		background: url("/img/pattern.png");
+		background-position: center center;
+		background-size: cover;
+	}
+	@include large-up{
+		padding-top: 50px;
+	}
+}
+#homeAboutInfo{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: url("/img/pattern.png");
+	background-position: center center;
+	
+	@include medium-up{
+		background: none;
+	}
+	
+	h2{
+		margin-bottom: 0px;
+	}
+	p{
+		margin: 25px 0;
+	}
+
+	.button{
+		margin-top: 0px;
+	}
+}
+
+#homeFormCon{
+	background: $darkGrey;
+	padding: 0;
+
+	.formHeader{
+		padding: 30px 40px 10px 40px;
+		text-align: center;
+	}
+
+	.clearviewFormCon{
+		padding-bottom: 200px;
+		@include large-up{
+			padding-bottom: 0px;
+		}
+	}
+}
+
+.clearviewFormCon{
+	background: #F5F5F5;
+	padding: 20px 15px 20px 15px;
+	overflow: hidden;
+}
+
+.clearviewForm{
+	width: 280px;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+
+	.submitButton{
+		background: $yellow;
+		color: $white;
+		width: 250px;
+		display: block;
+		margin: 20px auto;
+		padding: 15px 0;
+		border: none;
+		font-weight: $bold;
+		font-size: em(16px);
+		text-transform: uppercase;
+	}
+}
+
+.formGroup{
+	color: #B2B2B2;
+	border-bottom: 1px solid #B2B2B2;
+	margin-bottom: 30px;
+
+	label{
+		font-size: em(16px);
+		font-weight: $regular;
+		margin-right: 10px;
+	}
+	input{
+		background: none;
+		border: none;
+		outline: none;
+		&:focus, &:active, &:hover{
+			outline: none;
+		}
+	}
+}
+
+//RENT WITH US
+#rentWithCon{
+	background: $darkGrey;
+	
+	#rentImgRow{
+		position: relative;
+	}
+
+	#rentLiftImg{
+		position: absolute;
+		margin-bottom: 200px;
+		width: 280px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include medium-up{
+			margin-bottom: 50px;
+			margin-right: 50px;
+			width: 300px;
+		}
+		@include large-up{
+			margin-right: auto;
+			margin-left: 20px;
+			width: 300px;
+			margin-bottom: 50px;
+		}
+		@include xl-up{
+			margin-right: auto;
+			margin-left: 50px;
+			width: 350px;
+			margin-bottom: 50px;
+		}
+	}
+	#rentLiftImgTwo{
+		position: absolute;
+		margin-bottom: 320px;
+		width: 250px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		@include medium-up{
+			margin-bottom: 50px;
+			margin-left: 0px;
+			width: 350px;
+		}
+		@include large-up{
+			margin-right: auto;
+			margin-left: 0px;
+			width: 400px;
+			margin-bottom: 75px;
+		}
+		@include xl-up{
+			margin-right: auto;
+			margin-left: 50px;
+			width: 350px;
+			margin-bottom: 50px;
+		}
+	}
+
+	#rentInfo{
+		margin-top: 170px;
+		padding-bottom: 50px;
+
+		@include medium-up{
+			margin-top: 50px;
+		}
+		@include large-up{
+			margin-top: 75px;
+			margin-bottom: 50px;
+		}
+
+
+		h2{
+			margin-bottom: 10px;
+		}
+	}
+}
+
+.rentStepCon{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+	h4{
+		font-weight: $medium;
+	}
+	p{
+		margin-bottom: 0px;
+		@include xl-up{
+			max-width: 350px;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	a{
+		margin-top: 30px;
+	}
+	.buttonGrey{
+		@include medium-up{
+			&:active,&:focus,&:hover{
+				background: none;
+				border-color: $darkGrey;
+				color: $darkGrey;
+			}
+		}
+	}
+}
+
+#rentStepOne{
+	background: #EBCE6E;
+}
+#rentStepTwo{
+	background: #E7C657;
+}
+#rentStepThree{
+	background: #E5C045;
+}
+
+//PROJECT
+#projectSection{
+	background: url("/img/pattern.png");
+	background-position: center center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#projectIntro{
+	text-align: center;
+}
+
+.projectCon{
+	margin: 30px 0 0 0;
+	position:relative;
+	width: 100%;
+	padding: 0px;
+	border-top: 4px solid $yellow;
+	a{
+		color: inherit;
+	}
+}
+
+.projectHeader{
+	position: absolute;
+	padding: 10px 0;
+	background: rgba(255,255,255,0.9);
+	top: 0;
+	right: 0;
+	left: 0;
+	text-align: center;
+	h4{
+		font-size: em(16px);
+		margin: 0px;
+	}
+}
+
+//CONTACT
+.contactIntro{
+	background: $yellow;
+	text-align: center;
+}
+
+.contactIntroInfo{
+	padding: 50px 20px;
+
+	h4{
+		padding: 0 20px;
+	}
+	
+}
+
+.contactCon{
+	background: url("/img/pattern.png");
+	background-position: center center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.contactInfo{
+	text-align: center;
+	margin: 30px 0;
+
+	img{
+		margin-bottom: 20px;
+	}
+}
+
+.contactIcon{
+	width: 60px;
+}
+
+
+// ABOUT
+
+//FORM
+
+.creditAppForm{
+	background: $darkGrey;
+	padding: 0px;
+	.formHeader{
+		padding: 30px 10px 10px 10px;
+		text-align: center;
+	}
+}
+
+.jobAppForm{
+	background: $darkGrey;
+	padding: 0px;
+	.formHeader{
+		padding: 30px 25px 10px 25px;
+		text-align: center;
+	}
+}
+
+
+
+//
+
+#aboutValueInfo{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: url("/img/pattern.png");
+	background-position: center center;
+	
+	@include medium-up{
+		background: none;
+	}
+	@include large-up{
+		background: none;
+		padding-top: 0px;
+		padding-bottom: 0px;
+	}
+	
+	h2{
+		margin-bottom: 0px;
+	}
+	p{
+		margin: 25px 0;
+	}
+
+	.button{
+		margin-top: 0px;
+	}
+}
+
+#aboutSafetyInfo{
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background: url("/img/pattern.png");
+	background-position: center center;
+	
+	@include medium-up{
+		background: none;
+	}
+	
+	h2{
+		margin-bottom: 0px;
+	}
+	h4{
+		margin-top: 15px;
+	}
+	p{
+		margin: 25px 0;
+	}
+
+	.button{
+		margin-top: 0px;
+	}
+}
+
+#safetyImg{
+	width: 100%;
+	img{
+		width: 100%;
+	}
+
+	@include medium-up{
+			max-width: 768px;
+			display: block;
+			margin: 0 auto;
+		}
+	@include large-up{
+		width: 600px;
+		position: absolute;
+		bottom: 0;
+		left: -130px;
+	}
+	@include xl-up{
+		width: 700px;
+		left: -160px;
+	}
+
+}
+
+//SAFETY TRAINING
+#trainingCon{
+	background: $darkGrey;
+	color: $white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	ul{
+		margin-top: 20px;
+
+		li{
+			margin: 10px 0;
+		}
+	}
+}
+
+.safetyBox{
+	border: 3px solid $yellow;
+	padding: 20px;
+	overflow: hidden;
+	width: 290px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	position: relative;
+	@include large-up{
+		position: absolute;
+		height: 128px;
+		margin-top: auto;
+		margin-bottom: auto;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	img{
+		width: 45px;
+		display: block;
+		float: left;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		margin-top: auto;
+		margin-bottom: auto;
+	}
+	.safetyInfo{
+		float: right;
+		clear: both;
+		width: 180px;
+	}
+
+	p{
+		margin: 0 0 10px 0;
+	}
+	a{
+		margin: 0px;
+		color: $yellow;
+	}
+}
+
+#safetyBoxLeft{
+	@include large-up{
+		margin-right: 350px;
+	}
+}
+//NEWS
+#newsSection{
+	background: url("/img/pattern.png");
+	background-position: center center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#newsIntro{
+	text-align: center;
+}
+
+.newsCon{
+	margin: 30px 0 0 0;
+	position:relative;
+	width: 100%;
+	padding: 0px;
+	a{
+		color: inherit;
+	}
+}
+
+.newsInfo{
+	padding: 10px 0;
+	text-align: left;
+	h4{
+		font-size: em(16px);
+		margin: 0px;
+	}
+}
+
+.newsHighlight{
+	width: 50px;
+	height: 2px;
+	background: $yellow;
+}
+
+//WORK FOR CLEARVIEW
+#workWithCon{
+	background: url("/img/pattern.png");
+	background-position: center center;
+	padding-top: 50px;
+	padding-bottom: 0px;
+	border-top: 5px solid $yellow;
+
+	@include medium-up{
+		padding-bottom: 50px;
+	}
+}
+#workBenefitsCon{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.benefitBox{
+	width: 220px;
+	border: 2px solid $yellow;
+	text-align: center;
+	margin: 20px auto;
+	padding: 20px 0;
+
+	@include medium-up{
+		display: inline-block;
+		margin: 20px 30px;
+	}
+
+	@include large-up{
+		margin: 20px 10px;
+		width: 200px;
+	}
+
+	@include xl-up{
+		margin: 20px 30px;
+		width: 200px;
+	}
+	p{
+		margin: 0;
+	}
+}
+
+//EQUIPMENT 
+#equipmentCon{
+	background: url("/img/pattern.png");
+	background-position: center center;
+	padding-top: 50px;
+	padding-bottom: 250px;
+	@include medium-up{
+		padding-bottom: 150px;
+	}
+
+	@include large-up{
+		padding-top: 75px;
+		padding-bottom: 75px;
+	}
+}
+
+
+
+
