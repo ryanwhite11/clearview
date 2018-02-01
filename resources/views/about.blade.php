@@ -210,9 +210,10 @@
                             <input type="email" class="form-input" id="email">
                         </div>
                         <div class="formGroup">
-                            <label for="position">Position</label>
-                            <select name="jobList" form="clearviewForm">
-                              <option value="volvo">Select a Position</option>
+                            
+                            <label for="position" class="input-group-text">Position</label>
+                            <select name="jobList" form="clearviewForm" class="customSelect ">
+                              <option value="volvo">select</option>
                               <option value="Job">Job</option>
                               <option value="Job">Job</option>
                               <option value="Job">Job</option>
@@ -220,17 +221,25 @@
                             </select>
                         </div>
                         <div class="formGroup">
-                            <label for="resume">Resume</label>
-                            <input type="file" class="form-input" id="resume">
+                            <label for="resume" class="uploadLabel">Resume
+                                <span>upload file</span>
+                                <input type="file" class="form-input" id="resume">
+                            </label>
+                            
                         </div>
                         <div class="formGroup">
-                            <label for="cv">Cover Letter</label>
-                            <input type="file" class="form-input" id="cv">
+                            <label for="cv" class="uploadLabel">Cover Letter
+                                <span>upload file</span>
+                                <input type="file" class="form-input" id="cv">
+                                
+                            </label>
                         </div>
                         <div class="formGroup">
-                            <label for="msg">Message</label>
-                            <input type="text" class="form-input" id="msg">
+                            <label for="msg">Message
+                                <input type="text" class="form-input" id="msg">
+                            </label>
                         </div>
+
 
                         <input type="submit" name="submit" value="Apply" class="submitButton">
 

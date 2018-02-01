@@ -10554,6 +10554,57 @@ a.text-gray-dark:hover {
   }
 }
 
+.authContainer {
+  height: 100vh;
+  background: url("/img/pattern.png");
+  background-position: center center;
+  background-repeat: repeat;
+}
+
+.authContainer .btn-link {
+  margin: 0 auto;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus {
+  outline: 0 none;
+}
+
+.btn-primary {
+  background: #E5C045;
+  border: #E5C045;
+  color: #ffffff;
+}
+
+.btn-link {
+  color: #E5C045;
+}
+
+.btn-link:hover {
+  color: #343434;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background: #343434;
+  cursor: pointer;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+  background: #343434;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .hide {
   display: none;
 }
@@ -10561,6 +10612,8 @@ a.text-gray-dark:hover {
 img {
   max-width: 100%;
 }
+
+/* TYPOGRAPHY*/
 
 h1,
 h2,
@@ -10576,6 +10629,7 @@ label {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
 }
 
 h1 {
@@ -10705,6 +10759,7 @@ a.yellow:active {
   .buttonYellow:hover {
     background: none;
     border-color: #E5C045;
+    color: #E5C045;
   }
 }
 
@@ -10772,6 +10827,12 @@ a.yellow:active {
   text-decoration: none;
 }
 
+@media only screen and (min-width: 75em) {
+  .headerButton {
+    padding: 5px 20px;
+  }
+}
+
 #mainHeader {
   position: fixed;
   top: 0;
@@ -10781,6 +10842,12 @@ a.yellow:active {
   right: 0;
   padding: 15px 10px;
   z-index: 99;
+}
+
+@media only screen and (min-width: 75em) {
+  #mainHeader {
+    padding: 5px 10px;
+  }
 }
 
 #mainLogo {
@@ -11050,10 +11117,52 @@ a.yellow:active {
   text-transform: uppercase;
 }
 
+.uploadLabel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.uploadLabel span {
+  display: block;
+  float: right;
+}
+
+.uploadLabel [type=file] {
+  cursor: inherit;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  min-height: 100%;
+  min-width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}
+
+.customSelect {
+  float: right;
+  background: url("/img/downArrow.svg");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: right center;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  width: 85px;
+  color: #B2B2B2;
+  font-weight: 300;
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
 .formGroup {
   color: #B2B2B2;
   border-bottom: 1px solid #B2B2B2;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 
 .formGroup label {
@@ -11234,6 +11343,13 @@ a.yellow:active {
   background-position: center center;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 75em) {
+  #projectSection {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
 }
 
 #projectIntro {
@@ -11429,6 +11545,13 @@ a.yellow:active {
   margin: 10px 0;
 }
 
+@media only screen and (min-width: 75em) {
+  #trainingCon {
+    padding-top: 75px;
+    padding-top: 75px;
+  }
+}
+
 .safetyBox {
   border: 3px solid #E5C045;
   padding: 20px;
@@ -11490,6 +11613,13 @@ a.yellow:active {
   background-position: center center;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+@media only screen and (min-width: 75em) {
+  #newsSection {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
 }
 
 #newsIntro {

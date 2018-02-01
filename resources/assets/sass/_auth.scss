@@ -1,0 +1,41 @@
+.authContainer{
+	height: 100vh;
+	background: url("/img/pattern.png");
+	background-position: center center;
+	background-repeat: repeat;
+
+	.btn-link{
+		margin: 0 auto;
+	}
+}
+.center-text{
+	text-align: center;
+}
+ 
+.btn:focus, .btn:active:focus, .btn.active:focus {
+    outline: 0 none;
+}
+ 
+.btn-primary {
+    background: $yellow;
+    border: $yellow;
+    color: #ffffff;
+}
+.btn-link{
+	color: $yellow;
+
+	&:hover{
+		color: $darkGrey;
+	}
+}
+ 
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary {
+	background:$darkGrey;
+	cursor: pointer;
+
+}
+ 
+.btn-primary:active, .btn-primary.active {
+    background: $darkGrey;
+    box-shadow: none;
+}
