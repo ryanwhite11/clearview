@@ -1,3 +1,8 @@
+@mixin iphone6 {
+  @media only screen and (min-width: 25.875em) {
+    @content;
+  }
+}
 @mixin medium-up {
   @media only screen and (min-width: 48em) {
     @content;

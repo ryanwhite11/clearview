@@ -86,6 +86,7 @@ a.yellow{
 //COLOURS 
 .yellow{
 	color: $yellow;
+	font-weight: bold;
 }
 .white{
 	color: $white;
@@ -198,29 +199,11 @@ a.yellow{
 		color: $yellow;
 		text-decoration: none;
 	}
-	@include xl-up{
-		padding: 5px 20px;
+	@include large-up{
+		padding: 10px 20px;
 	}
 }
 
-//HEADER 
-#mainHeader{
-	position: fixed;
-	top: 0;
-	background: rgba(0,0,0,0.65);
-	width: 100%;
-	left: 0;
-	right: 0;
-	padding: 15px 10px;
-	z-index: 99;
-	@include xl-up{
-		padding: 5px 10px;
-	}
-}
-
-#mainLogo{
-	width: 150px;	
-}
 
 //FOOTER
 #mainFooter{
@@ -388,7 +371,7 @@ a.yellow{
 		background: url("/img/pattern.png");
 		background-position: center center;
 		background-size: cover;
-		margin-bottom: 100px;
+		margin-bottom: 250px;
 	}
 	@include large-up{
 		margin: 100px 0;
@@ -408,6 +391,7 @@ a.yellow{
 #homeAboutInfo{
 	padding-top: 50px;
 	padding-bottom: 50px;
+	padding-right: 70px;
 	background: url("/img/pattern.png");
 	background-position: center center;
 	
@@ -438,6 +422,10 @@ a.yellow{
 
 	.clearviewFormCon{
 		padding-bottom: 200px;
+
+		@include medium-up{
+			padding-bottom: 0px;
+		}
 		@include large-up{
 			padding-bottom: 0px;
 		}
@@ -534,6 +522,10 @@ a.yellow{
 	
 	#rentImgRow{
 		position: relative;
+
+		@include medium-up{
+			padding-bottom: 30px;
+		}
 	}
 
 	#rentLiftImg{
@@ -566,14 +558,15 @@ a.yellow{
 	}
 	#rentLiftImgTwo{
 		position: absolute;
-		margin-bottom: 320px;
-		width: 250px;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		left: 0;
-		right: 0;
-		bottom: 0;
+	    margin-bottom: 0px;
+	    margin-top: -250px;
+	    width: 250px;
+	    height: auto;
+	    margin-left: auto;
+	    margin-right: auto;
+	    left: 0;
+	    right: 0;
+	    top: 0;
 		@include medium-up{
 			margin-bottom: 50px;
 			margin-left: 0px;
@@ -595,16 +588,52 @@ a.yellow{
 
 	#rentInfo{
 		margin-top: 170px;
+		text-align: center;
 		padding-bottom: 50px;
+
+		a{
+			margin-bottom: 20px;
+		}
+
+		h4{
+			margin-bottom: 20px;
+		}
+
+		@include iphone6{
+			h2,h4{
+				padding: 0 50px;
+			}
+
+		}
 
 		@include medium-up{
 			margin-top: 50px;
+			padding: 0;
+
+			.buttonYellow{
+				margin-right: 10px;
+
+				@include large-up{
+					margin-right: 100px;
+				}
+			}
+
+			h2, h4{
+			padding: 0px;
+			text-align: left;
+			}
+
+			a{
+				display: inline-block;
+				float: left;
+				margin-top: 20px;
+				margin-bottom: 30px;
+			}
 		}
 		@include large-up{
 			margin-top: 75px;
 			margin-bottom: 50px;
 		}
-
 
 		h2{
 			margin-bottom: 10px;
@@ -621,7 +650,7 @@ a.yellow{
 	}
 	p{
 		margin-bottom: 0px;
-		@include xl-up{
+		@include large-up{
 			max-width: 350px;
 			display: block;
 			margin-left: auto;
@@ -638,6 +667,24 @@ a.yellow{
 				border-color: $darkGrey;
 				color: $darkGrey;
 			}
+		}
+	}
+
+	@include medium-up{
+		h4{
+			font-size: 1.5em;
+		}
+		h3{
+			font-size: 2em;
+		}
+		p{
+			padding: 0 200px
+		}
+	}
+
+	@include large-up{
+		p{
+			padding: 0 20px;
 		}
 	}
 }
@@ -721,11 +768,25 @@ a.yellow{
 
 	img{
 		margin-bottom: 20px;
+
+	}
+
+	@include large-up{
+		h4, p{
+			text-align: left;
+			padding-left: 80px;
+		}
 	}
 }
 
+
+
 .contactIcon{
 	width: 60px;
+
+	@include large-up{
+		float: left;
+	}
 }
 
 
@@ -843,7 +904,17 @@ a.yellow{
 
 		li{
 			margin: 10px 0;
+
+			@include medium-up{
+				margin: 20px 0;
+
+			}
 		}
+	}
+
+
+	@include iphone6{
+		padding: 50px;
 	}
 	@include xl-up{
 		padding-top: 75px;
@@ -868,6 +939,7 @@ a.yellow{
 		margin-bottom: auto;
 		top: 0;
 		right: 0;
+		width: 320px;
 		bottom: 0;
 	}
 
@@ -885,6 +957,16 @@ a.yellow{
 		float: right;
 		clear: both;
 		width: 180px;
+
+		@include large-up{
+			width: 200px;
+		}
+
+		h4{
+			@include medium-up{
+				font-size: em(16px);
+			}
+		}
 	}
 
 	p{
@@ -934,6 +1016,11 @@ a.yellow{
 	h4{
 		font-size: em(16px);
 		margin: 0px;
+	}
+
+	.readMoreButt{
+		display: block;
+		margin-top: 20px;
 	}
 }
 
@@ -993,12 +1080,22 @@ a.yellow{
 	padding-top: 50px;
 	padding-bottom: 250px;
 	@include medium-up{
-		padding-bottom: 150px;
+		padding-bottom: 280px;
 	}
 
 	@include large-up{
 		padding-top: 75px;
 		padding-bottom: 75px;
+	}
+}
+
+@include large-up{
+.equipmentInfo{
+		padding-right: 60px;
+
+		h4{
+			font-size: 1em;
+		}
 	}
 }
 

@@ -9,7 +9,7 @@
             <li><a class="headerLink" href="{{ url('/') }}">HOME</a></li>
             <li><a class="headerLink" href="{{ url('/equipment') }}">EQUIPMENT</a></li>
             <li><a class="headerLink" href="{{ url('/about') }}">ABOUT</a></li>
-            <li><a class="headerLink" href="#/">CONTACT</a></li>
+            <li><a class="headerLink" href="{{ url('/#contactCon') }}">CONTACT</a></li>
             <li><a class="headerLink" href="{{ url('/#projectSection') }}">PROJECTS</a></li>
             <li><a class="headerLink" href="{{ url('/about#trainingCon') }}">SAFETY</a></li>
             <li><a class="headerLink" href="{{ url('/about#newsSection') }}">NEWS</a></li>

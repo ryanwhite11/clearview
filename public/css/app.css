@@ -10351,6 +10351,33 @@ a.text-gray-dark:hover {
   z-index: 99;
 }
 
+#mainHeader {
+  position: fixed;
+  top: 0;
+  background: rgba(0, 0, 0, 0.65);
+  width: 100%;
+  left: 0;
+  right: 0;
+  padding: 15px 10px;
+  z-index: 99;
+}
+
+@media only screen and (min-width: 62em) {
+  #mainHeader {
+    padding: 25px 0;
+  }
+}
+
+#mainLogo {
+  width: 150px;
+}
+
+@media only screen and (min-width: 62em) {
+  #mainLogo {
+    width: 200px;
+  }
+}
+
 #headerInner {
   max-width: 1200px;
   margin: 0 auto;
@@ -10388,10 +10415,28 @@ a.text-gray-dark:hover {
   font-size: 2em;
 }
 
+@media only screen and (min-width: 48em) {
+  #headerNav ul li {
+    margin: 40px 0;
+  }
+}
+
 #headerNav ul li .headerLink {
   font-weight: 700;
   font-size: 1rem;
   color: #FFFFFF;
+}
+
+@media only screen and (min-width: 48em) {
+  #headerNav ul li .headerLink {
+    font-size: 1.25rem;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  #headerNav ul li .headerLink {
+    font-size: 1rem;
+  }
 }
 
 #headerNav.open {
@@ -10541,7 +10586,15 @@ a.text-gray-dark:hover {
     display: inline-block;
     margin: 0px 10px;
   }
+}
 
+@media only screen and (min-width: 75em) and (min-width: 62em) {
+  #headerNav ul li {
+    margin: 0px 20px;
+  }
+}
+
+@media only screen and (min-width: 75em) {
   #headerNav ul li .headerLink {
     -webkit-transition: 0.3s;
     transition: 0.3s;
@@ -10694,6 +10747,7 @@ a.yellow:active {
 
 .yellow {
   color: #E5C045;
+  font-weight: bold;
 }
 
 .white {
@@ -10827,31 +10881,10 @@ a.yellow:active {
   text-decoration: none;
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 62em) {
   .headerButton {
-    padding: 5px 20px;
+    padding: 10px 20px;
   }
-}
-
-#mainHeader {
-  position: fixed;
-  top: 0;
-  background: rgba(0, 0, 0, 0.65);
-  width: 100%;
-  left: 0;
-  right: 0;
-  padding: 15px 10px;
-  z-index: 99;
-}
-
-@media only screen and (min-width: 75em) {
-  #mainHeader {
-    padding: 5px 10px;
-  }
-}
-
-#mainLogo {
-  width: 150px;
 }
 
 #mainFooter {
@@ -11022,7 +11055,7 @@ a.yellow:active {
     background: url("/img/pattern.png");
     background-position: center center;
     background-size: cover;
-    margin-bottom: 100px;
+    margin-bottom: 250px;
   }
 }
 
@@ -11049,6 +11082,7 @@ a.yellow:active {
 #homeAboutInfo {
   padding-top: 50px;
   padding-bottom: 50px;
+  padding-right: 70px;
   background: url("/img/pattern.png");
   background-position: center center;
 }
@@ -11083,6 +11117,12 @@ a.yellow:active {
 
 #homeFormCon .clearviewFormCon {
   padding-bottom: 200px;
+}
+
+@media only screen and (min-width: 48em) {
+  #homeFormCon .clearviewFormCon {
+    padding-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 62em) {
@@ -11191,6 +11231,12 @@ a.yellow:active {
   position: relative;
 }
 
+@media only screen and (min-width: 48em) {
+  #rentWithCon #rentImgRow {
+    padding-bottom: 30px;
+  }
+}
+
 #rentWithCon #rentLiftImg {
   position: absolute;
   margin-bottom: 200px;
@@ -11231,14 +11277,15 @@ a.yellow:active {
 
 #rentWithCon #rentLiftImgTwo {
   position: absolute;
-  margin-bottom: 320px;
+  margin-bottom: 0px;
+  margin-top: -250px;
   width: 250px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   left: 0;
   right: 0;
-  bottom: 0;
+  top: 0;
 }
 
 @media only screen and (min-width: 48em) {
@@ -11269,12 +11316,54 @@ a.yellow:active {
 
 #rentWithCon #rentInfo {
   margin-top: 170px;
+  text-align: center;
   padding-bottom: 50px;
+}
+
+#rentWithCon #rentInfo a {
+  margin-bottom: 20px;
+}
+
+#rentWithCon #rentInfo h4 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 25.875em) {
+  #rentWithCon #rentInfo h2,
+  #rentWithCon #rentInfo h4 {
+    padding: 0 50px;
+  }
 }
 
 @media only screen and (min-width: 48em) {
   #rentWithCon #rentInfo {
     margin-top: 50px;
+    padding: 0;
+  }
+
+  #rentWithCon #rentInfo .buttonYellow {
+    margin-right: 10px;
+  }
+}
+
+@media only screen and (min-width: 48em) and (min-width: 62em) {
+  #rentWithCon #rentInfo .buttonYellow {
+    margin-right: 100px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  #rentWithCon #rentInfo h2,
+  #rentWithCon #rentInfo h4 {
+    padding: 0px;
+    text-align: left;
+  }
+
+  #rentWithCon #rentInfo a {
+    display: inline-block;
+    float: left;
+    margin-top: 20px;
+    margin-bottom: 30px;
   }
 }
 
@@ -11303,7 +11392,7 @@ a.yellow:active {
   margin-bottom: 0px;
 }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 62em) {
   .rentStepCon p {
     max-width: 350px;
     display: block;
@@ -11323,6 +11412,26 @@ a.yellow:active {
     background: none;
     border-color: #343434;
     color: #343434;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .rentStepCon h4 {
+    font-size: 1.5em;
+  }
+
+  .rentStepCon h3 {
+    font-size: 2em;
+  }
+
+  .rentStepCon p {
+    padding: 0 200px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .rentStepCon p {
+    padding: 0 20px;
   }
 }
 
@@ -11412,8 +11521,22 @@ a.yellow:active {
   margin-bottom: 20px;
 }
 
+@media only screen and (min-width: 62em) {
+  .contactInfo h4,
+  .contactInfo p {
+    text-align: left;
+    padding-left: 80px;
+  }
+}
+
 .contactIcon {
   width: 60px;
+}
+
+@media only screen and (min-width: 62em) {
+  .contactIcon {
+    float: left;
+  }
 }
 
 .creditAppForm {
@@ -11545,6 +11668,18 @@ a.yellow:active {
   margin: 10px 0;
 }
 
+@media only screen and (min-width: 48em) {
+  #trainingCon ul li {
+    margin: 20px 0;
+  }
+}
+
+@media only screen and (min-width: 25.875em) {
+  #trainingCon {
+    padding: 50px;
+  }
+}
+
 @media only screen and (min-width: 75em) {
   #trainingCon {
     padding-top: 75px;
@@ -11572,6 +11707,7 @@ a.yellow:active {
     margin-bottom: auto;
     top: 0;
     right: 0;
+    width: 320px;
     bottom: 0;
   }
 }
@@ -11591,6 +11727,18 @@ a.yellow:active {
   float: right;
   clear: both;
   width: 180px;
+}
+
+@media only screen and (min-width: 62em) {
+  .safetyBox .safetyInfo {
+    width: 200px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .safetyBox .safetyInfo h4 {
+    font-size: 1em;
+  }
 }
 
 .safetyBox p {
@@ -11645,6 +11793,11 @@ a.yellow:active {
 .newsInfo h4 {
   font-size: 1em;
   margin: 0px;
+}
+
+.newsInfo .readMoreButt {
+  display: block;
+  margin-top: 20px;
 }
 
 .newsHighlight {
@@ -11715,7 +11868,7 @@ a.yellow:active {
 
 @media only screen and (min-width: 48em) {
   #equipmentCon {
-    padding-bottom: 150px;
+    padding-bottom: 280px;
   }
 }
 
@@ -11723,6 +11876,16 @@ a.yellow:active {
   #equipmentCon {
     padding-top: 75px;
     padding-bottom: 75px;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .equipmentInfo {
+    padding-right: 60px;
+  }
+
+  .equipmentInfo h4 {
+    font-size: 1em;
   }
 }
 

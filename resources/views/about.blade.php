@@ -49,7 +49,7 @@
                     </form>
                 </div>  
             </div>
-            <div class="col-12 col-lg-6 offset-lg-6" id="aboutSafetyInfo">
+            <div class="col-12 col-lg-6 offset-lg-7" id="aboutSafetyInfo">
                 <h2 class="yellow">We Take Safety Seriously</h2>
                 <h4>Clearview Rentals offers a lift operator training certification for aerial lifts.</h4>
                 <p>To Clearview Rentals, the safety of our staff and customers is our number one priority.  If you require safety training or just have questions about how to adopt a better safety policy for your company, please contact us directly at <a class="yellow" href="#/">204-779-4243</a>.</p>
@@ -116,6 +116,7 @@
                             <h4>Article Title Goes Here</h4>
                             <p>January 1st, 2018</p>
                             <div class="newsHighlight"></div>
+                            <a href="/#" class="readMoreButt"><h4>READ MORE</h4></a>
                         </div>
                     </a>
                 </div>
@@ -135,31 +136,8 @@
         </div>
     </div>
 </div>
-<div class="contactCon">
-    <div class="container">
-        <div class="row">
 
-            <div class="col-12 col-lg-4 contactInfo">
-                <a href="#/" class="contactIcon"><img src="img/location.svg" alt="Contact Location Icon"></a>
-                <h4>Visit</h4>
-                <p>1615 Inkster Boulevard, Winnipeg</p>
-            </div> 
-
-            <div class="col-12 col-lg-4 contactInfo">
-                <a href="#/" class="contactIcon"><img src="img/phone.svg" alt="Contact Phone Icon"></a>
-                <h4>Call</h4>
-                <p>Booking: 204-779-4243</p>
-            </div> 
-
-            <div class="col-12 col-lg-4 contactInfo">
-                <a href="#/" class="contactIcon"><img src="img/mail.svg" alt="Contact Mail Icon"></a>
-                <h4>Email</h4>
-                <p>acarson&commat;clearviewrentals.ca</p>
-            </div> 
-
-        </div>
-    </div>
-</div>
+@include('partials.contact')
 
 <div id="workWithCon">
     <div class="container">
