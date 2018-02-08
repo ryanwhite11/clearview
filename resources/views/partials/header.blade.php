@@ -2,7 +2,7 @@
 <h1 class="hide">Header</h1>
   <div id="headerInner">
 
-    <img src="img/clearview-logo-white.png" alt="Clearview Logo" id="mainLogo">
+    <img src="/img/clearview-logo-white.png" alt="Clearview Logo" id="mainLogo">
       <nav id="headerNav">
           <h3 class="hide">Header Nav</h3>
           <ul>

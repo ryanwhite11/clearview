@@ -1,3 +1,4 @@
-<div>
-    <h2>Sidebar</h2>
+<div class="sidebar">
+        <img src="../img/clearview-logo-white.png" alt="Clearview Logo" id="authLogo">
+
 </div>

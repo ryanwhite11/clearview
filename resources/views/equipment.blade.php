@@ -83,11 +83,11 @@
 
 @include('partials.contact')
 
-<div id="homeMap">
-    
-</div>
+<div id="map"></div>
 
 
-
-
+@endsection
+@section('scripts')
+<script src="/js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBViVSLtDt83KT1z2vuj2QczoOYIxWj89A&callback=initMap"></script>
 @endsection

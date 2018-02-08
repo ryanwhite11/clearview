@@ -1,13 +1,26 @@
 .authContainer{
-	height: 100vh;
+	min-height: 100vh;
 	background: url("/img/pattern.png");
 	background-position: center center;
 	background-repeat: repeat;
+	padding-top: 50px;
+	padding-bottom: 50px;
+
 
 	.btn-link{
 		margin: 0 auto;
 	}
+
+	img{
+		max-width: 100%;
+		height: auto;
+	}
 }
+
+//MCE Editor
+// div.mce-edit-area{
+// 	height: 300px;
+// }
 .center-text{
 	text-align: center;
 }
@@ -38,4 +51,7 @@
 .btn-primary:active, .btn-primary.active {
     background: $darkGrey;
     box-shadow: none;
+}
+
+.sidebar{
 }

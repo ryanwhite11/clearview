@@ -1030,6 +1030,33 @@ a.yellow{
 	background: $yellow;
 }
 
+//NEWS SINGLE
+.newsSingleCon{
+	padding: 100px 0 80px 0;
+	background: url("/img/pattern.png");
+	background-position: center center;
+
+	@include medium-up{
+		padding: 120px 0 100px 0;
+	}
+
+	@include large-up{
+		padding: 150px 0 100px 0;
+	}
+
+}
+
+#newsSingleInfo{
+	text-align: center;
+}
+
+#newsSingleBody{
+	margin-top: 30px;
+	img{
+		height: auto;
+	}
+}
+
 //WORK FOR CLEARVIEW
 #workWithCon{
 	background: url("/img/pattern.png");
@@ -1100,5 +1127,10 @@ a.yellow{
 }
 
 
+//MAP
+#map{
+	height: 500px; 
+	width: 100%;
+}
 
 

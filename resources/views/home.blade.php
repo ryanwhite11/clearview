@@ -102,7 +102,7 @@
         <div class="row">
             <div class="col-12" id="projectIntro">
                 <h2 class="yellow">PROJECTS</h2>
-                <h4>Projects we've completed</h4>
+                <h4>Our machines helped build and maintain…</h4>
             </div>
             
             <div class="col-12 col-md-6 col-lg-4">
@@ -134,10 +134,10 @@
 @include('partials.contact')
 
 
-<div id="homeMap">
-    
-</div>
+<div id="map"></div>
 
-
-
+@endsection
+@section('scripts')
+<script src="/js/map.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBViVSLtDt83KT1z2vuj2QczoOYIxWj89A&callback=initMap"></script>
 @endsection

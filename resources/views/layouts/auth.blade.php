@@ -13,15 +13,32 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+
+    <!-- Scripts -->
+    {{-- <script src="{{asset('js/tinymce/jquery.tinymce.min.js')}}"></script>
+    <script src="{{asset('js/tinymce/jquery.tinymce.min.js')}}"></script>
+    <script src="{{asset('js/tinymce/tinymce.min.js')}}"></script> --}}
 </head>
 <body>
     <div id="app">
-        @include('auth.sidebar')
-        @yield('content')
-        @include('partials.footer')
+        <div class="container authContainer">
+            <div class="row">
+                <div class="col-12 col-md-3 sidebar">
+                    @include('auth.sidebar')
+
+                </div>
+                <div class="col-12 col-md-9">
+                    @yield('content')
+
+                </div>
+            </div>
+            
+        {{-- @include('partials.footer') --}}
+        </div>
     </div>
 
     <!-- Scripts -->
-    <script src="{{ asset('js/app.js') }}"></script>
-</body>
+
+    {{-- <script src="{{ asset('js/editor.js') }}"></script> --}}
+ </body>
 </html>

@@ -10608,14 +10608,21 @@ a.text-gray-dark:hover {
 }
 
 .authContainer {
-  height: 100vh;
+  min-height: 100vh;
   background: url("/img/pattern.png");
   background-position: center center;
   background-repeat: repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .authContainer .btn-link {
   margin: 0 auto;
+}
+
+.authContainer img {
+  max-width: 100%;
+  height: auto;
 }
 
 .center-text {
@@ -11806,6 +11813,36 @@ a.yellow:active {
   background: #E5C045;
 }
 
+.newsSingleCon {
+  padding: 100px 0 80px 0;
+  background: url("/img/pattern.png");
+  background-position: center center;
+}
+
+@media only screen and (min-width: 48em) {
+  .newsSingleCon {
+    padding: 120px 0 100px 0;
+  }
+}
+
+@media only screen and (min-width: 62em) {
+  .newsSingleCon {
+    padding: 150px 0 100px 0;
+  }
+}
+
+#newsSingleInfo {
+  text-align: center;
+}
+
+#newsSingleBody {
+  margin-top: 30px;
+}
+
+#newsSingleBody img {
+  height: auto;
+}
+
 #workWithCon {
   background: url("/img/pattern.png");
   background-position: center center;
@@ -11887,5 +11924,10 @@ a.yellow:active {
   .equipmentInfo h4 {
     font-size: 1em;
   }
+}
+
+#map {
+  height: 500px;
+  width: 100%;
 }
 

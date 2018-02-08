@@ -3,7 +3,7 @@
         <div class="row justify-content-center">
 
             <div class="col-12">
-                <img src="img/clearview-logo-white.png" alt="Clearview Logo" id="footerLogo">
+                <img src="/img/clearview-logo-white.png" alt="Clearview Logo" id="footerLogo">
             </div>
             <div class="col-12 col-sm-6 col-md offset-sm-1 offset-md-0 footerInfoCon">
                 <h3 class="white">About</h3>
@@ -43,9 +43,9 @@
                 </ul>
             </div>
             <div class="col-12 footerInfoCon footerSmContainer">
-                <a href="#/" class="footerSmIcon"><img src="img/twitter.svg" alt="Contact On Twitter"></a>
-                <a href="#/" class="footerSmIcon"><img src="img/linkedin.svg" alt="Contact On Twitter"></a>
-                <a href="#/" class="footerSmIcon"><img src="img/facebook.svg" alt="Contact On Twitter"></a>
+                <a href="#/" class="footerSmIcon"><img src="/img/twitter.svg" alt="Contact On Twitter"></a>
+                <a href="#/" class="footerSmIcon"><img src="/img/linkedin.svg" alt="Contact On LinkedIn"></a>
+                <a href="#/" class="footerSmIcon"><img src="/img/facebook.svg" alt="Contact On Facebook"></a>
             </div>
 
             <div id="footerCopyright">
