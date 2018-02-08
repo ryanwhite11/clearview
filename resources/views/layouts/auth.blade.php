@@ -21,16 +21,21 @@
 </head>
 <body>
     <div id="app">
-        <div class="container authContainer">
-            <div class="row">
-                <div class="col-12 col-md-3 sidebar">
-                    @include('auth.sidebar')
+        <div class="container-fluid authContainer">
+            <div class="row" id="topbar">
 
-                </div>
-                <div class="col-12 col-md-9">
+                <div id="headerLinks">
+                     <a href=""><p>View Site</p></a>
+                     <a href=""><p>Logout</p></a>
+                 </div>
+
+                 <h2>Welcome, Clara Marshall</h2>
+             </div>
+
+               
                     @yield('content')
 
-                </div>
+               
             </div>
             
         {{-- @include('partials.footer') --}}

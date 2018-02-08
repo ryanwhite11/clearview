@@ -10612,8 +10612,6 @@ a.text-gray-dark:hover {
   background: url("/img/pattern.png");
   background-position: center center;
   background-repeat: repeat;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 .authContainer .btn-link {
@@ -10623,6 +10621,10 @@ a.text-gray-dark:hover {
 .authContainer img {
   max-width: 100%;
   height: auto;
+}
+
+.container-fluid {
+  padding: 0px;
 }
 
 .center-text {
@@ -10663,6 +10665,205 @@ a.text-gray-dark:hover {
   background: #343434;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.back-to-home {
+  color: #E5C045;
+}
+
+.back-to-home p {
+  font-weight: 700;
+}
+
+.back-to-home:hover {
+  color: #343434;
+}
+
+.addNewsCon {
+  padding: 20px 20px;
+}
+
+.addNewsCon p,
+.addNewsCon h2 {
+  padding: 0 15px;
+}
+
+#topbar {
+  background-color: #E5C045;
+  width: 100%;
+  margin: 0px;
+  height: 150px;
+  color: #fff;
+  -webkit-box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.2);
+  padding: 10px 15px;
+  text-align: center;
+}
+
+#topbar #headerLinks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#topbar h2 {
+  font-size: 20px;
+}
+
+#topbar a {
+  color: #fff;
+}
+
+#topbar a:active {
+  color: #fff;
+}
+
+.projectList {
+  margin-top: 50px;
+}
+
+.projectList h3 {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+.projectList .add {
+  color: #10B436;
+}
+
+.projectList .list {
+  margin-top: 30px;
+}
+
+.projectList .list li {
+  border-top: 1px solid #ccc;
+  padding: 20px 0;
+}
+
+.projectList .list li .title {
+  font-weight: 700;
+  margin: 0px;
+  display: block;
+}
+
+.projectList .list li .date {
+  margin: 0px;
+  display: inline;
+  margin-right: 40px;
+}
+
+.projectList .list li .edit {
+  color: #E5C045;
+  margin: 0px;
+  display: inline;
+  margin-right: 30px;
+}
+
+@media only screen and (min-width: 25.875em) {
+  .projectList .list li .edit {
+    margin-right: 30px;
+  }
+}
+
+.projectList .list li .delete {
+  color: #E54B45;
+  margin: 0px;
+  text-align: right;
+  display: inline;
+}
+
+@media only screen and (min-width: 48em) {
+  .addNewsCon {
+    padding: 20px 100px;
+  }
+
+  .addNewsCon p,
+  .addNewsCon h2 {
+    padding: 0 15px;
+  }
+
+  #topbar {
+    height: auto;
+    padding: 20px 50px;
+  }
+
+  #topbar h2 {
+    font-size: 30px;
+  }
+
+  #topbar #headerLinks p {
+    margin-bottom: 10px;
+  }
+
+  .projectList {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .projectList h3 {
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+
+  .projectList .add {
+    color: #10B436;
+  }
+
+  .projectList .list {
+    margin-top: 30px;
+  }
+
+  .projectList .list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 20px 0;
+  }
+
+  .projectList .list li .title {
+    font-weight: 700;
+    margin: 0px;
+    display: block;
+    width: 30%;
+  }
+
+  .projectList .list li .date {
+    margin: 0px;
+    display: inline;
+    margin-right: 30px;
+  }
+
+  .projectList .list li .edit {
+    color: #E5C045;
+    margin: 0px;
+    display: inline;
+    margin-right: 15px;
+  }
+}
+
+@media only screen and (min-width: 48em) and (min-width: 25.875em) {
+  .projectList .list li .edit {
+    margin-right: 30px;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  .projectList .list li .delete {
+    color: #E54B45;
+    margin: 0px;
+    text-align: right;
+    display: inline;
+  }
 }
 
 .hide {

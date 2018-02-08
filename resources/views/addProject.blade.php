@@ -2,8 +2,9 @@
 
 @section('content')
     <div class="row fullHeight align-items-center justify-content-center">
-        <div class="col-12">
+        <div class="col-12 addNewsCon">
         <form class="form-horizontal" method="POST" enctype='multipart/form-data' action="{{ url('admin/project/add/') }}">
+        <a href="{{url('/admin')}}" class="back-to-home"><p>Back to home</p></a> 
         <h2>Add Project</h2>
             {{ csrf_field() }}
 
