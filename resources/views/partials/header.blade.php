@@ -13,7 +13,7 @@
             <li><a class="headerLink" href="{{ url('/#projectSection') }}">PROJECTS</a></li>
             <li><a class="headerLink" href="{{ url('/about#trainingCon') }}">SAFETY</a></li>
             <li><a class="headerLink" href="{{ url('/about#newsSection') }}">NEWS</a></li>
-            <li><a href="#/" class="headerButton">RENT NOW</a></li>
+            <li><a href="mailto:acarson&commat;clearviewrentals.ca?subject=Rent Now" class="headerButton">RENT NOW</a></li>
           </ul>
       </nav>
 

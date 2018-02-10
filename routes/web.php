@@ -44,3 +44,9 @@ Route::get('/admin/project/', 'ProjectController@form')->name('addProject');
 Route::post('/admin/project/add', 'ProjectController@create');
 
 
+//Forms
+
+
+
+
+

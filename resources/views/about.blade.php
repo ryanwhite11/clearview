@@ -7,7 +7,7 @@
         <div class="row fullHeight jusity-content-center align-items-center">
             <div class="col-12">
                 <h2 class="landingTitle"><span>About</span><br>Clearview</h2>
-                <a href="#/" class="landingButton buttonYellow">Contact Us</a>
+                <a href="mailto:acarson&commat;clearviewrentals.ca" class="landingButton buttonYellow">Contact Us</a>
             </div>
         </div>
     </div>
@@ -19,7 +19,7 @@
             <div class="col-12 col-lg-6" id="aboutValueInfo">
                 <h2 class="yellow">Value Guaranteed</h2>
                 <p>Clearview Rentals has been a trusted aerial lift rental provider to over 300 local companies since 2001.<br><br>We are all about helping you get the job done quickly and safely.   With a quality fleet of Mobile Elevated Work Platforms, our goal is to make renting as easy as possible.  We have a strong reputation for on-time deliveries and flexibility, ensuring our “can do “attitude is front and centre to every customer big and small.</p>
-                <a href="#/" class="button buttonGrey">View Projects</a>
+                <a href="{{ url('/#projectSection') }}" class="button buttonGrey">View Projects</a>
             </div>
             <div class="col-md-12 col-lg-5 offset-lg-1 creditAppForm">
                 <div class="formHeader">
@@ -52,8 +52,8 @@
             <div class="col-12 col-lg-6 offset-lg-7" id="aboutSafetyInfo">
                 <h2 class="yellow">We Take Safety Seriously</h2>
                 <h4>Clearview Rentals offers a lift operator training certification for aerial lifts.</h4>
-                <p>To Clearview Rentals, the safety of our staff and customers is our number one priority.  If you require safety training or just have questions about how to adopt a better safety policy for your company, please contact us directly at <a class="yellow" href="#/">204-779-4243</a>.</p>
-                <a href="#/" class="button buttonYellow">Sign Up</a>
+                <p>To Clearview Rentals, the safety of our staff and customers is our number one priority.  If you require safety training or just have questions about how to adopt a better safety policy for your company, please contact us directly at <a class="yellow" href="tel:2047794243">204-779-4243</a>.</p>
+                <a href="mailto:acarson&commat;clearviewrentals.ca?subject=Safety Training" class="button buttonYellow">Sign Up</a>
             </div>
             <div id="safetyImg">
                 <img src="img/workers.png" alt="Clearview Construction Workers">
@@ -82,14 +82,14 @@
                     <img src="img/lift.svg" alt="Fall Protection Training Icon">
                     <div class="safetyInfo">
                         <h4>Mobile Elevated Work Platform Training</h4>
-                        <a href="#" class="yellow">SIGN UP</a>
+                        <a href="mailto:acarson&commat;clearviewrentals.ca?subject=Mobile Elevated Work Platform Training" class="yellow">SIGN UP</a>
                     </div>
                 </div>
                 <div class="safetyBox">
                     <img src="img/falling.svg" alt="Fall Protection Training Icon">
                     <div class="safetyInfo">
                         <h4>Fall Protection and Safety Training</h4>
-                        <a href="#" class="yellow">SIGN UP</a>
+                        <a href="mailto:acarson&commat;clearviewrentals.ca?subject=Fall Protection and Safety Training" class="yellow">SIGN UP</a>
                     </div>
                 </div>
             </div>

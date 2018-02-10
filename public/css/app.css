@@ -10618,6 +10618,10 @@ a.text-gray-dark:hover {
   margin: 0 auto;
 }
 
+.authContainer .card {
+  margin-top: 50px;
+}
+
 .authContainer img {
   max-width: 100%;
   height: auto;
@@ -11363,6 +11367,13 @@ a.yellow:active {
   font-weight: 700;
   font-size: 1em;
   text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.clearviewForm .submitButton:hover {
+  width: 100%;
 }
 
 .uploadLabel {
@@ -11720,9 +11731,23 @@ a.yellow:active {
   padding-bottom: 30px;
 }
 
+@media only screen and (min-width: 62em) {
+  #contactCon {
+    margin-top: 30px;
+  }
+}
+
 .contactInfo {
   text-align: center;
   margin: 30px 0;
+}
+
+.contactInfo a {
+  color: #343434;
+}
+
+.contactInfo a:hover {
+  color: #E5C045;
 }
 
 .contactInfo img {
@@ -11962,6 +11987,10 @@ a.yellow:active {
   #safetyBoxLeft {
     margin-right: 350px;
   }
+}
+
+#noNews {
+  text-align: center;
 }
 
 #newsSection {

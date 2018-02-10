@@ -455,6 +455,12 @@ a.yellow{
 		font-weight: $bold;
 		font-size: em(16px);
 		text-transform: uppercase;
+		cursor: pointer;
+		transition: 0.3s;
+	}
+
+	.submitButton:hover{
+		width: 100%;
 	}
 }
 
@@ -760,11 +766,27 @@ a.yellow{
 	background-position: center center;
 	padding-top: 30px;
 	padding-bottom: 30px;
+
+
 }
 
+#contactCon{
+	@include large-up{
+		margin-top: 30px;
+	}
+
+}
 .contactInfo{
 	text-align: center;
 	margin: 30px 0;
+
+	a{
+		color: $darkGrey;
+	}
+
+	a:hover{
+		color: $yellow;
+	}
 
 	img{
 		margin-bottom: 20px;
@@ -984,6 +1006,11 @@ a.yellow{
 	}
 }
 //NEWS
+
+#noNews{
+	text-align: center;
+}
+
 #newsSection{
 	background: url("/img/pattern.png");
 	background-position: center center;

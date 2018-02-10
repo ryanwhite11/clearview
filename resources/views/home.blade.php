@@ -8,7 +8,7 @@
             <div class="col-12 col-md-10 col-lg-8 offset-md-1 offset-lg-2">
                 <h2 class="landingTitle"><span>LIFTING YOU TO</span><br>NEW HEIGHTS</h2>
                 <h4>Our fleet is made up of a range of high quality Skyjack machines, each suitable for various customer needs.</h4>
-                <a href="#/" class="landingButton buttonClear">VIEW EQUIPMENT</a>
+                <a href="{{ url('/equipment') }}" class="landingButton buttonClear">VIEW EQUIPMENT</a>
                 <a href="#/" class="landingButton buttonYellow d-xl-none">RENT NOW</a>
             </div>
         </div>
@@ -21,7 +21,7 @@
             <div class="col-12 col-lg-7" id="homeAboutInfo">
                 <h2 class="yellow">About Clearview Rentals</h2>
                 <p>We are all about helping you get the job done quickly and safely.   With a quality fleet of Mobile Elevated Work Platforms, our goal is to make renting as easy as possible.  We have a strong reputation for on-time deliveries and flexibility, ensuring our “can do “attitude is front and centre to every customer big and small.</p>
-                <a href="#/" class="button buttonGrey">View Projects</a>
+                <a href="{{ url('/#projectSection') }}" class="button buttonGrey">View Projects</a>
             </div>
             <div class="col-md-12 col-lg-5" id="homeFormCon">
                 <div class="formHeader">
@@ -30,6 +30,7 @@
                 </div>
                     
                 <div class="clearviewFormCon">
+
                     <form class="clearviewForm">
                         <h4 class="hide">Estimate Form</h4>
                         <div class="formGroup">
@@ -53,6 +54,7 @@
 
                         <input type="submit" name="submit" value="Submit Inquiry" class="submitButton">
                     </form>
+                    
                 </div> 
             </div>
         </div>
@@ -76,20 +78,20 @@
             <div class="col-12 col-lg-4 rentStepCon" id="rentStepOne">
                 <h4>Step One:</h4>
                 <h3>Make The Call</h3>
-                <p>Monday - Friday<br>7:00am 0 5:00pm</p>
-                <a href="#/" class="button buttonGrey">Call</a>
+                <p>Monday - Friday<br>7:00am - 5:00pm</p>
+                <a href="tel:2047794243" class="button buttonGrey">Call</a>
             </div>
             <div class="col-12 col-lg-4 rentStepCon" id="rentStepTwo">
                 <h4>Step Two:</h4>
                 <h3>Send Inquiry</h3>
                 <p>Quick and Easy Application Process Keeps You Working and Not Waiting!</p>
-                <a href="#/" class="button buttonGrey">Get Started</a>
+                <a href="{{ url('/#homeFormCon') }}" class="button buttonGrey">Get Started</a>
             </div>
             <div class="col-12 col-lg-4 rentStepCon" id="rentStepThree">
                 <h4>Step Three:</h4>
                 <h3>Delivered To You</h3>
                 <p>Get What You Need, When You Need – Delivered Direct To Your Site!</p>
-                <a href="#/" class="button buttonGrey">Get Started</a>
+                <a href="{{ url('/#homeFormCon') }}" class="button buttonGrey">Get Started</a>
             </div>
         </div>
         
