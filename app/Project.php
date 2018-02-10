@@ -7,6 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 class Project extends Model
 {
     //
-    protected $fillable = ['title', 'content', 'image'];
+    protected $fillable = ['title', 'image'];
 
 }

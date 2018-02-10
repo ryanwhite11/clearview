@@ -107,21 +107,29 @@
                 <h2 class="yellow">RECENT NEWS</h2>
                 <h4>Keep up to date with Clearview</h4>
             </div>
+
+            @forelse($news as $article)
             
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="newsCon">
-                    <a href="#/">
-                        <img src="img/mall.jpg" alt="Mall Project">
+                    <a href="{{ url('news/'."$article->id") }}">
+                        <img src="/{{$article->image}}" alt="{{$article->title}} Image">
                         <div class="newsInfo">
-                            <h4>Article Title Goes Here</h4>
-                            <p>January 1st, 2018</p>
+                            <h4>{{$article->title}}</h4>
+                            <p>{{$article->created_at->format('F jS Y')}}</p>
                             <div class="newsHighlight"></div>
-                            <a href="/#" class="readMoreButt"><h4>READ MORE</h4></a>
+                            <a href="{{ url('news/'."$article->id") }}" class="readMoreButt"><h4>READ MORE</h4></a>
                         </div>
                     </a>
                 </div>
-                
             </div>
+            
+            @empty
+            <div class="col-12">
+                <h4 class="yellow" id="noNews">No News Yet</h4>
+            </div>
+            @endforelse
+                
         </div>
     </div>
 </section>

@@ -61,11 +61,11 @@
                                     Forgot Your Password?
                                 </a>
                             </div>
-                            <div class="col-md-12 center-text">
+                            {{-- <div class="col-md-12 center-text">
                                 <a class="btn btn-link" href="{{ route('register') }}">
                                     Sign Up
                                 </a>
-                            </div>
+                            </div> --}}
                         </div>
                     </form>
                 </div>

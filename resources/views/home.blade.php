@@ -106,18 +106,27 @@
                 <h2 class="yellow">PROJECTS</h2>
                 <h4>Our machines helped build and maintain…</h4>
             </div>
+
+            @forelse($projects as $project)
             
             <div class="col-12 col-md-6 col-lg-4">
                 <div class="projectCon">
-                    <a href="#/">
-                        <div class="projectHeader">
-                            <h4>Winnipeg Collections Outlet Mall</h4>
-                        </div>
-                        <img src="img/mall.jpg" alt="Mall Project">
-                    </a>
+                    <div class="projectHeader">
+                        <h4>{{$project->title}}</h4>
+                    </div>
+                    <img src="{{$project->image}}" alt="{{$project->title}} Image">
                 </div>
-                
             </div>
+
+            @empty
+
+            <div class="col-12">
+                <h4 class="yellow" id="noNews">No Projects Yet</h4>
+            </div>
+            
+            @endforelse
+            
+            
         </div>
     </div>
 </section>
