@@ -25,8 +25,8 @@
             <div class="row" id="topbar">
 
                 <div id="headerLinks">
-                     <a href=""><p>View Site</p></a>
-                     <a href=""><p>Logout</p></a>
+                     <a href="/"><p>View Site</p></a>
+                     <a href="{{url('/logout')}}"><p>Logout</p></a>
                  </div>
 
                  <h2>Welcome, Clara Marshall</h2>

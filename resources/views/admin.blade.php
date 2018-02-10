@@ -15,26 +15,15 @@
 
 			<div>
 				<ul class="list">
+					@foreach($projects as $project)
 					<li class="list-item">
-						<p class="title">Project Title</p>
-						<p class="date">Jan 4th 2018</p>
-						<a href=""><h3 class="edit">Edit</h3></a>
-						<a href=""><h3 class="delete">Delete</h3></a>
+						<p class="title">{{$project->title}}</p>
+						<p class="date">{{$project->created_at}}</p>
+						<a href="{{ url('admin/project/edit/'."$project->id") }}"><h3 class="edit">Edit</h3></a>
+						<a href="{{ url('admin/project/delete/'."$project->id") }}"><h3 class="delete">Delete</h3></a>
 					</li>
+					@endforeach
 
-					<li>
-						<p class="title">This is a Project title</p>
-						<p class="date">Jan 4th 2018</p>
-						<a href=""><h3 class="edit">Edit</h3></a>
-						<a href=""><h3 class="delete">Delete</h3></a>
-					</li>
-
-					<li>
-						<p class="title">Project Title</p>
-						<p class="date">Jan 4th 2018</p>
-						<a href=""><h3 class="edit">Edit</h3></a>
-						<a href=""><h3 class="delete">Delete</h3></a>
-					</li>
 				</ul>
 			</div>
 		</div>
@@ -47,26 +36,15 @@
 
 			<div>
 				<ul class="list">
+					@foreach($news as $article)
 					<li class="list-item">
-						<p class="title">Article Title</p>
-						<p class="date">Jan 4th 2018</p>
-						<a href=""><h3 class="edit">Edit</h3></a>
-						<a href=""><h3 class="delete">Delete</h3></a>
+						<p class="title">{{$article->title}}</p>
+						<p class="date">{{$article->created_at}}</p>
+						<a href="{{ url('admin/news/edit/'."$article->id") }}"><h3 class="edit">Edit</h3></a>
+						<a href="{{ url('admin/news/delete/'."$article->id") }}"><h3 class="delete">Delete</h3></a>
 					</li>
-
-					<li>
-						<p class="title">News Article</p>
-						<p class="date">Jan 4th 2018</p>
-						<a href=""><h3 class="edit">Edit</h3></a>
-						<a href=""><h3 class="delete">Delete</h3></a>
-					</li>
-
-					<li>
-						<p class="title">Another News Title</p>
-						<p class="date">Jan 4th 2018</p>
-						<a href=""><h3 class="edit">Edit</h3></a>
-						<a href=""><h3 class="delete">Delete</h3></a>
-					</li>
+					@endforeach
+					
 				</ul>
 			</div>
 		</div>
