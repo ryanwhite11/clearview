@@ -1084,6 +1084,59 @@ a.yellow{
 	}
 }
 
+.paginationLinks{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 50px;
+	p{
+		margin-bottom: 10px;
+		font-weight: $medium;
+		font-size: em(16px);
+	}
+	a{
+		color: $black;
+		text-transform: uppercase;
+		font-weight: $bold;
+	}
+	.paginationDivider{
+		height: 2px;
+		width: 40px;
+		background: $yellow;
+		display: block;
+		margin-bottom: 15px;
+	}
+	#previousCon{
+		width: 120px;
+		float: left;
+		display: block;
+		text-align: right;
+
+
+
+		a{
+			display: block;
+			float: right;
+			clear: both;
+		}
+
+		.paginationDivider{
+			display: block;
+			float: right;
+			overflow: hidden;
+			clear: both;
+		}
+		
+	}
+
+	#nextCon{
+		width: 120px;
+		float: right;
+		display: block;
+
+
+	}
+}
+
 //WORK FOR CLEARVIEW
 #workWithCon{
 	background: url("/img/pattern.png");

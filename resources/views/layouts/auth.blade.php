@@ -29,7 +29,7 @@
                      <a href="{{url('/logout')}}"><p>Logout</p></a>
                  </div>
 
-                 <h2>Welcome, Clara Marshall</h2>
+                 <h2>Welcome, {{ Auth::user()->name }}</h2>
              </div>
 
                

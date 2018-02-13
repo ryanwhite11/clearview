@@ -40,7 +40,8 @@ Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
 //news
 Route::get('/admin/news/', 'NewsController@form')->name('addNews');
 Route::post('/admin/news/add', 'NewsController@create');
-Route::get('/news/{id}', 'HomeController@newsSingle');
+Route::get('/news/{id}', 'HomeController@newsSingle')->name('news');
+//Route::get('/news/{id}?page={item}', 'HomeController@newsSingle');
 Route::get('/admin/news/delete/{id}', 'NewsController@delete');
 Route::get('/admin/news/edit/{id}', 'NewsController@edit');
 Route::post('/admin/news/edit/', 'NewsController@update');

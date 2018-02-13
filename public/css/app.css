@@ -12073,6 +12073,58 @@ a.yellow:active {
   height: auto;
 }
 
+.paginationLinks {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+
+.paginationLinks p {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.paginationLinks a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.paginationLinks .paginationDivider {
+  height: 2px;
+  width: 40px;
+  background: #E5C045;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.paginationLinks #previousCon {
+  width: 120px;
+  float: left;
+  display: block;
+  text-align: right;
+}
+
+.paginationLinks #previousCon a {
+  display: block;
+  float: right;
+  clear: both;
+}
+
+.paginationLinks #previousCon .paginationDivider {
+  display: block;
+  float: right;
+  overflow: hidden;
+  clear: both;
+}
+
+.paginationLinks #nextCon {
+  width: 120px;
+  float: right;
+  display: block;
+}
+
 #workWithCon {
   background: url("/img/pattern.png");
   background-position: center center;

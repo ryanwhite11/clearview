@@ -2,7 +2,10 @@
 
 namespace App\Http\Controllers;
 
+
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
 use App\Project;
 use App\News;
 
@@ -37,9 +40,12 @@ class HomeController extends Controller
     }
 
     public function newsSingle($id){
-        //$id = 4;
+       
         $news = News::where('id',$id)->first();
-        //dd($news);
-        return view('newsSingle', ['news' => $news]);
+        $next = News::where('id', '>', $news->id)->first();
+        $previous = News::where('id', '<', $news->id)->orderBy('id', 'DESC')->first();
+
+        return view('newsSingle', ['news' => $news])->with('next', $next)->with('previous', $previous);
+        // return view( 'newsSingle', ['menu' => $menu, 'page' => $currentPage ] );;
     }
 }
